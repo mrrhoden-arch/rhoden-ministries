@@ -136,7 +136,7 @@ p { margin: 0 0 1em; }
 .about { background: var(--paper); }
 .about-grid { display: grid; grid-template-columns: 5fr 7fr; gap: clamp(32px, 6vw, 90px); align-items: center; }
 .about-photo { position: relative; margin: 0; }
-.about-photo img { position: relative; z-index: 1; border-radius: var(--radius); aspect-ratio: 3/4; object-fit: cover; width: 100%; box-shadow: 0 30px 60px -25px rgba(11,26,51,.5); }
+.about-photo img { position: relative; z-index: 1; border-radius: var(--radius); aspect-ratio: 3/4; object-fit: cover; width: 100%; height: auto; box-shadow: 0 30px 60px -25px rgba(11,26,51,.5); }
 .about-photo .frame { position: absolute; inset: 22px -22px -22px 22px; border: 1px solid var(--gold); border-radius: var(--radius); }
 .about-text p { color: #39414f; }
 .about blockquote cite { display: block; margin-top: .6rem; font: 600 .68rem/1 var(--sans); font-style: normal; letter-spacing: .18em; text-transform: uppercase; color: var(--gold-dark); }

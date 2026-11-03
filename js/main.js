@@ -98,7 +98,7 @@ const countObserver = new IntersectionObserver(entries => entries.forEach(en => 
   const start = end > 1000 ? end - 30 : 0, t0 = performance.now(), dur = 1600;
   const tick = now => {
     const p = Math.min((now - t0) / dur, 1), eased = 1 - Math.pow(1 - p, 3);
-    el.textContent = Math.round(start + (end - start) * eased);
+    el.textContent = Math.round(start + (end - start) * eased) + (el.dataset.suffix || "");
     if (p < 1) requestAnimationFrame(tick);
   };
   requestAnimationFrame(tick);
