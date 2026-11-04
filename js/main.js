@@ -16,7 +16,9 @@ const EPISODES = [
 const SERMONS = [
   { title: "Called to Serve", ref: "Matthew 23:1–12", img: "sermon-called-to-serve", yt: "" },
   { title: "The Trap, the Image, the Return", ref: "Matthew 22:15–22", img: "sermon-trap-image-return", yt: "" },
-];
+  // "from": the card stays hidden until this date/time (YouTube release time, Pacific).
+  { title: "Angry at Grace", ref: "Jonah 4", img: "sermon-angry-at-grace", yt: "QYaKqe2BqJ8", from: "2026-11-08T00:00:00-08:00" },
+].filter(v => !v.from || Date.now() >= Date.parse(v.from));
 
 const SHORTS = [
   { title: "We Are All Called to Serve", ref: "Matthew 23", img: "short-called-to-serve", yt: "o8NbmVAsg5E" },
